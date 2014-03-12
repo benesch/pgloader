@@ -12,7 +12,7 @@ DEBUILD_ROOT = /tmp/pgloader
 all: $(PGLOADER)
 
 docs:
-	pandoc pgloader.1.md -o pgloader.1
+	ronn -roff pgloader.1.md
 
 ~/quicklisp/local-projects/Postmodern:
 	git clone https://github.com/marijnh/Postmodern.git $@
